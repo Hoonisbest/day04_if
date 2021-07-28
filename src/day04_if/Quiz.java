@@ -7,7 +7,6 @@ public class Quiz {
 		Scanner input = new Scanner(System.in);
 	 
 		
-		/*
 		//학점판별 프로그램
 		double sc;
 		
@@ -20,6 +19,8 @@ public class Quiz {
 		else {
 			System.out.println("아쉽지만 장학금 지급 대상자가 아닙니다");
 		}
+		
+		
 		
 		//나이판별 프로그램
 	int n1;
@@ -38,6 +39,7 @@ public class Quiz {
 	else {
 		System.out.println("10대보다 어립니다");
 	}
+	
 	
 	
 	//계절 프로그램
@@ -65,15 +67,16 @@ public class Quiz {
 	
 	
 	//성적평균 등급
-	double kor,mat,eng, Sc;
+	int kor,mat,eng;
+	double Sc;
 	
 	
 	System.out.print("국어 점수입력 : ");
-	kor = input.nextDouble();
+	kor = input.nextInt();
 	System.out.print("수학 점수입력 : ");
-	mat = input.nextDouble();
+	mat = input.nextInt();
 	System.out.print("영어 점수입력 : ");
-	eng = input.nextDouble();
+	eng = input.nextInt();
 	
 	Sc = (kor+mat+eng)/3;
 	
@@ -93,9 +96,11 @@ public class Quiz {
 	else {
 		System.out.println("F");
 	}
-	*/
 	
-	//윤년판별 문제
+	
+	
+	
+	//윤년판별 문제(내문제풀이)
 	int Y;
 	System.out.print("년도 입력 : ");
 	Y = input.nextInt();
